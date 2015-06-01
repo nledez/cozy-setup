@@ -3,8 +3,8 @@
 requirements="fabric fabtools"
 
 if [[ "$VIRTUAL_ENV" == "" ]]; then
-    curl -o - https://bootstrap.pypa.io/ez_setup.py -O - | python
-    curl -o - https://bootstrap.pypa.io/get-pip.py | python -
+    curl https://bootstrap.pypa.io/ez_setup.py | python
+    curl https://bootstrap.pypa.io/get-pip.py | python
 fi
 
 pip install -U $requirements
